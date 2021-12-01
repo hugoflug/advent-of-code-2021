@@ -1,0 +1,5 @@
+.stack-work/
+advent-of-code.cabal
+*~
+.dist-newstyle
+dist-newstyle/
