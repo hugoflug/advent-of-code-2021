@@ -2,7 +2,7 @@
 
 module AOC1_2(solve) where
 
-import Data.List (foldl', scanl')
+import Data.List (foldl')
 
 solve :: String -> Int
 solve input = snd . foldl' count (take 3 list, 0) . drop 3 $ list
