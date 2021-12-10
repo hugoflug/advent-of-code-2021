@@ -5,6 +5,10 @@ import qualified AOC2_1
 import qualified AOC2_2
 import qualified AOC3_1
 import qualified AOC3_2
+import qualified AOC4_1
+import qualified AOC4_2
+import qualified AOC5_1
+import qualified AOC5_2
 
 goldStar :: (HasCallStack, Example a) => a -> SpecWith (Arg a)
 goldStar = specify "GOLD STAR *"
@@ -35,3 +39,19 @@ main = hspec $ do
     goldStar $ do
       input <- readFile "test/AOC3.txt"
       AOC3_2.solve input `shouldBe` 2829354
+  describe "4_1" $ do
+    goldStar $ do
+      input <- readFile "test/AOC4.txt"
+      AOC4_1.solve input `shouldBe` 64084
+  describe "4_2" $ do
+    goldStar $ do
+      input <- readFile "test/AOC4.txt"
+      AOC4_2.solve input `shouldBe` 12833
+  describe "5_1" $ do
+    goldStar $ do
+      input <- readFile "test/AOC5.txt"
+      AOC5_1.solve input `shouldBe` 5774
+  describe "5_2" $ do
+    goldStar $ do
+      input <- readFile "test/AOC5.txt"
+      AOC5_2.solve input `shouldBe` 18423

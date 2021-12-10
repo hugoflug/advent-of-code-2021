@@ -16,12 +16,17 @@ library
       AOC2_2
       AOC3_1
       AOC3_2
+      AOC4_1
+      AOC4_2
+      AOC5_1
+      AOC5_2
   other-modules:
       Paths_advent_of_code_twenty_twentyone
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , split
   default-language: Haskell2010
 
@@ -36,6 +41,7 @@ test-suite advent-of-code-test
   build-depends:
       advent-of-code-twenty-twentyone
     , base >=4.7 && <5
+    , containers
     , hspec
     , split
   default-language: Haskell2010
